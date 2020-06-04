@@ -7,7 +7,15 @@
 <h1>40723230</h1>
 <h1>40723215</h1>
 <h1>40723213</h1>
-<h1>40723249</h1>
+<p>網站:https://s40723213.github.io/cd2020/content/index.html<br/>倉儲:https://github.com/s40723213/cd2020</p>
+<p>IPv6 Ubuntu 對外連線設定</p>
+<p>1.VirtualBox勾選2個IPv6，主機網路為NAT Network</p>
+<p><img alt="" height="350" src="/images/1.PNG" width="519"/></p>
+<p><img alt="" height="442" src="/images/2.PNG" width="652"/></p>
+<p>2.主機密碼:kmol2020，開啟LXTermial，輸入cd /etc<br/>3.cd apt &gt; cd apt.conf.d &gt; sudo vi proxy.conf <br/>4.按i編輯，輸入proxy設定內容如下Acquire::http::Proxy "http://[2001:288:6004:17::53]:3128";<br/>5.按ESC並輸入:wq來儲存，sudo apt update來更新aptifconfig為查看網卡信息的各項說明<br/>6.ifconfig &gt; sudo apt install net-tools，cd /etc/netplan<br/>7.sudo vi 00-installer-config.yaml，編輯成如下內容</p>
+<p><img alt="" height="475" src="/images/3.PNG" width="686"/></p>
+<p>8.輸入sudo netplan apply來更新<br/>9.在VirtualBox新增整體系統的IPv6埠號，如影片中的各4個埠號<br/>10.輸入ifconfig來查詢IPv6的ip，fd17:625c:f037..... (虛擬主機的ipv6)<br/>11.進入cd2020pj1 &gt; git config --global --add http.proxy [2001:288:6004:17::53]:3128<br/>12.git pull，再tmp下sudo vi oauth_scrum.txt<br/>13.sudo vi wsgi.py，將近端的host改為:: ，輸入python3 wsgi.py<br/>14.網址為https://[::1]:18443/alogin ，在開啟cd2020pj1.leo<br/>15.再Nav搜尋allowExt就好了</p>
+<p>操作影片<br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/mM5RVKCvExQ" width="560"></iframe></p><h1>40723249</h1>
 <p><strong>Bridged IPv6 遠端控制設定</strong></p>
 <p><strong>1.首先設定IPV6的內容</strong></p>
 <p><strong>2.在喜好設定設定IPV6參數，記得勾選</strong></p>
