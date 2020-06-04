@@ -15,7 +15,8 @@
 <p>2.主機密碼:kmol2020，開啟LXTermial，輸入cd /etc<br/>3.cd apt &gt; cd apt.conf.d &gt; sudo vi proxy.conf <br/>4.按i編輯，輸入proxy設定內容如下Acquire::http::Proxy "http://[2001:288:6004:17::53]:3128";<br/>5.按ESC並輸入:wq來儲存，sudo apt update來更新aptifconfig為查看網卡信息的各項說明<br/>6.ifconfig &gt; sudo apt install net-tools，cd /etc/netplan<br/>7.sudo vi 00-installer-config.yaml，編輯成如下內容</p>
 <p><img alt="" height="475" src="/images/3.PNG" width="686"/></p>
 <p>8.輸入sudo netplan apply來更新<br/>9.在VirtualBox新增整體系統的IPv6埠號，如影片中的各4個埠號<br/>10.輸入ifconfig來查詢IPv6的ip，fd17:625c:f037..... (虛擬主機的ipv6)<br/>11.進入cd2020pj1 &gt; git config --global --add http.proxy [2001:288:6004:17::53]:3128<br/>12.git pull，再tmp下sudo vi oauth_scrum.txt<br/>13.sudo vi wsgi.py，將近端的host改為:: ，輸入python3 wsgi.py<br/>14.網址為https://[::1]:18443/alogin ，在開啟cd2020pj1.leo<br/>15.再Nav搜尋allowExt就好了</p>
-<p>操作影片<br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/mM5RVKCvExQ" width="560"></iframe></p><h1>40723249</h1>
+<p>操作影片<br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/mM5RVKCvExQ" width="560"></iframe></p>
+<h1>40723249</h1>
 <p><strong>Bridged IPv6 遠端控制設定</strong></p>
 <p><strong>1.首先設定IPV6的內容</strong></p>
 <p><strong>2.在喜好設定設定IPV6參數，記得勾選</strong></p>
@@ -30,10 +31,44 @@
 <p><strong>9.打開XLaunch</strong></p>
 <p><strong>10.輸入xterm&amp;</strong></p>
 <p><strong>11.cd tmp -&gt;cd cd2020pj1 -&gt;git pull -&gt; ls -&gt;cd docs -&gt; cd cmsimde -&gt; vi wsgi.py 即可</strong></p>
-<p><strong><img alt="" height="473" src="/images/擷取.PNG" width="647"/><br/></strong></p><h1>40523253</h1>
+<p><strong><img alt="" height="473" src="/images/擷取.PNG" width="647"/><br/></strong></p>
+<h1>40523253</h1>
 <h1>40723222</h1>
 <h1>40723218</h1>
 <h1>40723209</h1>
+<p><strong>IPV6虛擬主機遠端控制</strong></p>
+<p><strong>操作步驟:</strong></p>
+<p>1.從老師倉儲下的downloads打開w13_ipv6_assignment.txt，內有ipv6遠端控制說明。</p>
+<p>2.依照說明設定，設定IPv6網路位址輸入2001:288:6004:17:2020:2::7209</p>
+<p>3.子網路輸入64、預設匝道輸入2001:288:6006:17::254。</p>
+<p>4.接著開啟虛擬主機，設定整體系統埠號，將主機IP改為個人IP。</p>
+<p>5.啟動Ubuntu輸入密碼kmol2020。</p>
+<p>6.開啟LXTermial，並進入cd2020pj1。</p>
+<p>7.git pull檢查有無新版本，cd docs/cmsimde。</p>
+<p>8.輸入vi wsgi.py，將host改為個人主機IP。</p>
+<p>9.在另一台主機開啟putty，輸入連線主機IP。</p>
+<p>10.設定SSH下的X11打勾並在中輸入localhost:0.0。</p>
+<p>11.設定完成後存儲，在打開即可連線該主機。</p>
+<p>12.輸入帳密kmol2020，打開XLaunch.exe並輸入xterm&amp;啟動。</p>
+<p>13.進入tmp/cd2020pj1/docs/cmsimde，輸入python3 wsgi.py開啟遠端。</p>
+<p>14.網址為[該主機IP]:17443。</p>
+<p>15.即完成遠端控制操作。</p>
+<p><strong>影片:</strong></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/CQmwOsgLMiE" width="560"></iframe></p>
+<p><strong>FileZilla 虛擬主機文件共享設定</strong></p>
+<p><strong>操作步驟:</strong></p>
+<p>1.下載FileZilla。</p>
+<p>2.確認虛擬主機的IP後啟動。</p>
+<p>3.開啟putty，設定個人主機IP。</p>
+<p>4.設定SSH中的X11，打勾並輸入localhost:0.0存儲後開啟。</p>
+<p>5.帳號密碼kmol2020。</p>
+<p>6.開啟FileZilla，點選檔案-&gt;站台管理員-&gt;新增站台。</p>
+<p>7.更改為 SFTP-SSH，輸入個人主機IP及22。</p>
+<p>8.更改為詢問密碼、命名為kmol2020。</p>
+<p>9.密碼輸入kmol2020。</p>
+<p>10.完成文件共享設定。</p>
+<p><strong>影片:</strong></p>
+<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/KwRgI_G5k3o" width="560"></iframe></p>
 <h1>40723219</h1>
 <p><yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">IPv6 Ubuntu 遠端控制</yt-formatted-string></p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/slrjsgy7jG4" width="560"></iframe></p>
@@ -49,7 +84,8 @@
 <p>設定SSH下的X11</p>
 <p>設定完成後存儲，在打開即可連線該主機</p>
 <p>輸入帳密kmol2020，打開XLaunch.exe並輸入xterm&amp;啟動</p>
-<p>進入tmp/cd2020pj1/docs/cmsimde，輸入python3 wsgi.py開啟遠端</p><h1>40723210</h1>
+<p>進入tmp/cd2020pj1/docs/cmsimde，輸入python3 wsgi.py開啟遠端</p>
+<h1>40723210</h1>
 <h4>IPv6 Ubuntu 對外連線設定</h4>
 <p>必須要先了解<a href="https://s40723210.github.io/cd2020/content/Linux%20%E6%8C%87%E4%BB%A4.html">Linux</a>的輸入法，以及<a href="https://s40723210.github.io/cd2020/content/vi%20%E8%88%87%20vim%20%E7%9A%84%E6%8C%87%E4%BB%A4%E6%95%B4%E7%90%86.html">vi與vim</a>的指令<br/><br/>1.在VirtualBox先勾選2個IPv6選項，主機網路為NAT Network<br/><br/>2.主機密碼:kmol2020，開啟LXTermial，輸入cd /etc<br/><span>sudo為</span><span><span>使用特殊的權限執行程式。vi為編輯內容</span><br/></span>3.cd apt &gt; cd apt.conf.d &gt; <span>sudo vi proxy.conf <br/><br/></span>4.密碼為kmol2020，按i來編輯，輸入proxy設定內容如下</p>
 <div>
@@ -119,7 +155,8 @@
 <h4 class="title">FileZilla 虛擬主機文件共享</h4>
 <p>1.下載<a href="https://portableapps.com/redirect/?a=FileZillaPortable&amp;s=s&amp;d=pa&amp;f=FileZillaPortable_3.48.1.paf.exe">FileZilla</a> <span>，將下載好的檔案解壓縮，放入隨身系統<br/><br/>2.啟動Ubuntu主機，確認整體系統的埠號，開啟putty<br/><br/>3.設定ip來連接，跟之前一樣得設定，帳密為kmol2020<br/><br/>4.打開FileZilla，新增一個站台::1，設定SFTP - SSH以及如影片內容<br/><br/>5.密碼koml2020，完成就可以使用上傳下載來編輯比較方便<br/></span></p>
 <p>影片連結:<a href="https://youtu.be/Cq5Xv94dYrA">https://youtu.be/Cq5Xv94dYrA</a></p>
-<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/Cq5Xv94dYrA" width="560"></iframe><br/><br/></p><h1>40723250</h1>
+<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/Cq5Xv94dYrA" width="560"></iframe><br/><br/></p>
+<h1>40723250</h1>
 <p>網站 : <a href="https://s40723250.github.io/cd2020">https://s40723250.github.io/cd2020</a></p>
 <p>倉儲 : <a href="https://github.com/s40723250/cd2020">https://github.com/s40723250/cd2020</a></p>
 <p><span>Vrep 虛擬主機設置</span></p>
@@ -138,4 +175,5 @@
 <p><b>7.點選Activities→開啟LXTerminal</b></p>
 <p><b>8.依序輸入以下指令 xterm&amp; → ls(顯示資料夾) →cd coppeliasim4_rev4 →輸入cd 進入選擇的資料夾 → ./coppeliaSim.sh(開啟Vrep)</b></p>
 <p><b>9.開啟檔案sdc.ttt</b></p>
-<p><b><img alt="" height="251" src="https://s40723250.github.io/cd2020/images/VirtualBoxVM_2020-06-04_15-48-44.png" width="470"/></b></p><h1>40623251</h1>
+<p><b><img alt="" height="251" src="https://s40723250.github.io/cd2020/images/VirtualBoxVM_2020-06-04_15-48-44.png" width="470"/></b></p>
+<h1>40623251</h1>
