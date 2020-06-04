@@ -1,0 +1,271 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cdbw14-2</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>cdbw14-2 協同產品設計實習</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cdbw14-2 協同產品設計實習</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='40723230.html'>40723230</a><li><a href='40723215.html'>40723215</a><li><a href='40723213.html'>40723213</a><li><a href='40723249.html'>40723249</a><li><a href='40523253.html'>40523253</a><li><a href='40723222.html'>40723222</a><li><a href='40723218.html'>40723218</a><li><a href='40723209.html'>40723209</a><li><a href='40723219.html'>40723219</a><li><a href='40723210.html'>40723210</a><li><a href='40723250.html'>40723250</a><li><a href='40623251.html'>40623251</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">40723219 << <a href='40723219.html'>Previous</a> <a href='40723250.html'>Next</a> >> 40723250<br /><h1>40723210</h1>
+<h4>IPv6 Ubuntu 對外連線設定</h4>
+<p>必須要先了解<a href="https://s40723210.github.io/cd2020/content/Linux%20%E6%8C%87%E4%BB%A4.html">Linux</a>的輸入法，以及<a href="https://s40723210.github.io/cd2020/content/vi%20%E8%88%87%20vim%20%E7%9A%84%E6%8C%87%E4%BB%A4%E6%95%B4%E7%90%86.html">vi與vim</a>的指令<br/><br/>1.在VirtualBox先勾選2個IPv6選項，主機網路為NAT Network<br/><br/>2.主機密碼:kmol2020，開啟LXTermial，輸入cd /etc<br/><span>sudo為</span><span><span>使用特殊的權限執行程式。vi為編輯內容</span><br/></span>3.cd apt &gt; cd apt.conf.d &gt; <span>sudo vi proxy.conf <br/><br/></span>4.密碼為kmol2020，按i來編輯，輸入proxy設定內容如下</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_972857">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">Acquire::http::Proxy "http://[2001:288:6004:17::53]:3128";</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>5.按ESC並輸入:wq來儲存，sudo apt update來更新apt<br/><span>ifconfig為查看網卡信息的各項說明</span><br/>6.ifconfig &gt; sudo apt install net-tools，cd /etc/netplan<br/><br/>7.sudo vi 00-installer-config.yaml，編輯成如下內容<span><span> </span>#間格和縮牌都要一樣</span></p>
+<div>
+<div class="syntaxhighlighter lua" id="highlighter_90226">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="lua plain">network:</code></div>
+<div class="line number2 index1 alt1"><code class="lua spaces">    </code><code class="lua plain">ethernets:</code></div>
+<div class="line number3 index2 alt2"><code class="lua spaces">        </code><code class="lua plain">enp0s3:</code></div>
+<div class="line number4 index3 alt1"><code class="lua spaces">           </code><code class="lua plain">dhcp4: </code><code class="lua keyword">true</code></div>
+<div class="line number5 index4 alt2"><code class="lua spaces">           </code><code class="lua plain">dhcp6: </code><code class="lua keyword">true</code></div>
+<div class="line number6 index5 alt1"><code class="lua spaces">           </code><code class="lua plain">nameservers:</code></div>
+<div class="line number7 index6 alt2"><code class="lua spaces">               </code><code class="lua plain">addresses:</code></div>
+<div class="line number8 index7 alt1"><code class="lua spaces">                  </code><code class="lua plain">- 2001:b000:168::11  </code></div>
+<div class="line number9 index8 alt2"><code class="lua spaces">  </code><code class="lua plain">version: 2</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>8.輸入sudo netplan apply來更新，再輸入ping6 2001:288:6004:17::254來測試連線<br/><br/>9.在<span>VirtualBox</span>新增整體系統的IPv6埠號，如影片中的各4個埠號<br/><br/>10.輸入ifconfig來查詢IPv6的ip，fd17:625c:f037..... (虛擬主機的ipv6)<br/><br/>11.進入cd2020pj1 &gt; git config --global --add http.proxy [2001:288:6004:17::53]:3128<br/><br/>12.git pull 更新內容，再tmp下<span>sudo vi </span>oauth_scrum.txt來新增檔案<br/><br/>13.sudo vi wsgi.py，將近端的host改為:: ，輸入python3 wsgi.py<br/><br/>14.網址為https://[::1]:18443/alogin ，在開啟cd2020pj1.leo<br/><br/>15.再Nav搜尋allowExt(後來有更動過位子)，新增一個'ttt'檔，重開就可上傳.ttt檔</p>
+<p>影片連結:<a href="https://youtu.be/2BFxNK5TtEk">https://youtu.be/2BFxNK5TtEk</a></p>
+<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/2BFxNK5TtEk" width="560"></iframe></p>
+<hr/>
+<h4><span>IPv6 </span>遠端控制伺服</h4>
+<p><span>必須先完成IPv6 Ubuntu 對外連線設定，才可以開始測試IPv6遠端控制</span></p>
+<p>1.打開老師的<a href="https://github.com/mdecourse/cd2020/blob/master/downloads/w13_ipv6_assignment.txt">ipv6_assignment.txt</a>，這裡有詳細的ipv6設置說明<br/><br/>2.照著上面的說明，來設定網路的ipv6，7210為乙班10號2為乙班<br/><br/>3.再來設定整體系統的埠號，把Host改為自己的ip，啟動Ubuntn主機<br/><br/>4.進入cd2020pj1，先git pull看看有沒有新版本，在進入docs &gt; cmsimde<br/><br/>5.使用vi wsgi.py來編輯，將host改為自己主機的ip，按i編輯，按esc輸入:wq儲存<br/><br/>6.另一台電腦開啟putty，輸入想遠端要連線的ip<span> </span><span>(記得被連線的主機要關防火牆)</span><br/><br/>7.都設定好之後，save再open就可以連到該主機，帳號密碼為kmol2020<br/><br/>8.使用XLaunch(為<a href="https://sourceforge.net/projects/xming/files/latest/download">Xming</a>軟件)來開啟，直接遠端控制開啟python3 wsgi.py<br/><br/>9.網址是該控制主機的ip加上括號和17443，必須要關掉proxy才可以通</p>
+<p>影片連結:<a href="https://youtu.be/5NTALa4xvEc">https://youtu.be/5NTALa4xvEc</a></p>
+<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/5NTALa4xvEc" width="560"></iframe></p>
+<hr/>
+<p></p>
+<h4 class="title">FileZilla 虛擬主機文件共享</h4>
+<p>1.下載<a href="https://portableapps.com/redirect/?a=FileZillaPortable&amp;s=s&amp;d=pa&amp;f=FileZillaPortable_3.48.1.paf.exe">FileZilla</a> <span>，將下載好的檔案解壓縮，放入隨身系統<br/><br/>2.啟動Ubuntu主機，確認整體系統的埠號，開啟putty<br/><br/>3.設定ip來連接，跟之前一樣得設定，帳密為kmol2020<br/><br/>4.打開FileZilla，新增一個站台::1，設定SFTP - SSH以及如影片內容<br/><br/>5.密碼koml2020，完成就可以使用上傳下載來編輯比較方便<br/></span></p>
+<p>影片連結:<a href="https://youtu.be/Cq5Xv94dYrA">https://youtu.be/Cq5Xv94dYrA</a></p>
+<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/Cq5Xv94dYrA" width="560"></iframe><br/><br/></p><br />40723219 << <a href='40723219.html'>Previous</a> <a href='40723250.html'>Next</a> >> 40723250</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
